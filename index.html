@@ -1,152 +1,181 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Org Chart</title>
-        <link rel="stylesheet" href="demo.css"/>
-        <link rel="stylesheet" href="jquery.orgchart.css"/>
-        <style>
-        span.title {
-            font-weight: normal;
-            font-style: italic;
-            color: #404040;
-        }
-        
-        span.open {
-            color: #0099cc;
-        }
-        </style>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="jquery.orgchart.js"></script>
-        <script>
-        $(function() {
-            $("#organisation").orgChart({container: $("#main")});
-        });
-        </script>
-    </head>
 
-    <body>
-        <div id="left">
-            <ul id="organisation" style="display: none;">
-                <li class="company">
-                    <em>
+<head>
+    <title>Org Chart</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="jquery.orgchart.css" />
+    <style>
+    span.title {
+        font-weight: normal;
+        font-style: italic;
+        color: #404040;
+    }
+    
+    span.open {
+        color: #0099cc;
+    }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.orgchart.js"></script>
+    <script>
+    $(function() {
+        $("#organisation").orgChart({
+            container: $("#main")
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="left">
+        <ul id="organisation" style="display: none;">
+            <li class="company">
+                <em>
                         Board of Directors
                     </em>
-                    <ul>
-                        <li>
-                            Jennifer Pahlka<br><span class="title">Executive Director</span>
-                            <ul>
-                                   
-                                  <li>
-                                    Maryann Kongovi <br><span class="title">COO</span>
-                                    <ul>
-                                            <li>
-                                            Kathie Lee <br><span class="title">CFO</span>
-                                              <ul>
-                                             <li>Greg Johns<br><span class="title">Finance Manager</span></li>
-                                              <li><span class="open">Accountant</span></li>
-                                          </ul>
-                                      </li>
-                                         <li>
-                                            Meghan Reilly <br><span class="title">CAO</span>
-                                            <ul>
-                                                <li>Brenda Stone<br><span class="title">H.R. Manager</span></li>
-                                                <li>Leticia Figueroa<br><span class="title">Operations Assistant</span></li>
-                                                <li>Carolina Yu<br><span class="title">Operations Coordinator</span></li>
-                                            </ul>
-                                        </li>
-                                            <li>
-                                            Jaime-Alexis Fowler<br><span class="title">Director of Marketing</span>
-                                               <ul>
-                                                <li>Matthew Loveless<br><span class="title">Data & Analytics Manager</span></li>
-                                                <li>Zoe Blumenfeld<br><span class="title">Marketing Manager</span>
-                                                <li>Molly McLeod<br><span class="title">Visual Designer</span></li>
-                                                <li>David Leonard<br><span class="title">Front End Developer</span></li>
-                                            </ul>
+                <ul>
+                    <li>
+                        Jennifer Pahlka
+                        <br><span class="title">Executive Director</span>
+                        <ul>
+                            <li>
+                                Maryann Kongovi
+                                <br><span class="title">COO</span>
+                                <ul>
+                                    <li>
+                                        Kathie Lee
+                                        <br><span class="title">CFO</span>
+                                        <ul>
+                                            <li>Greg Johns
+                                                <br><span class="title">Finance Manager</span></li>
+                                            <li><span class="open">Accountant</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Meghan Reilly
+                                        <br><span class="title">CAO</span>
+                                        <ul>
+                                            <li>Brenda Stone
+                                                <br><span class="title">H.R. Manager</span></li>
+                                            <li>Leticia Figueroa
+                                                <br><span class="title">Operations Assistant</span></li>
+                                            <li>Carolina Yu
+                                                <br><span class="title">Operations Coordinator</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Jaime-Alexis Fowler
+                                        <br><span class="title">Director of Marketing</span>
+                                        <ul>
+                                            <li>Matthew Loveless
+                                                <br><span class="title">Data & Analytics Manager</span></li>
+                                            <li>Zoe Blumenfeld
+                                                <br><span class="title">Marketing Manager</span>
+                                                <li>Molly McLeod
+                                                    <br><span class="title">Visual Designer</span></li>
+                                                <li>David Leonard
+                                                    <br><span class="title">Front End Developer</span></li>
+                                        </ul>
                                         </li>
                                         <li>
-                                            Greg Kerwin <br><span class="title">CRO & CMO</span>
-                                            <ul>
-                                                <li>
-                                                    Luke Norris<br><span class="title">Sr. Director, Government Relations</span>
-                                                    <ul>
-                                                        <li>Shakira Ferrell<br><span class="title">Brigade Development Manager</span></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Mischa Byruck<br><span class="title">Institutional Partnerships Director</span>                                      
-                                                    <ul>
-                                                        <li>Jessica Silverman<br><span class="title">Sr. Development Manager</span>
-                                                            <ul>
-                                                            <li>Open<br><span class="title">Grants Administrator</span></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>Open <br><span class="title">Mgr, Corporate Partnerships & Donations</span>
-                                                    <ul>
-                                                        <li>Chi Offomah<br><span class="title">Development Assistant</span></li>
-                                    </ul>
+                                            Luke Norris
+                                            <br><span class="title">Sr. Director, Government Relations</span>
+                                        </li>
+                                        <li>
+                                            Mischa Byruck
+                                            <br><span class="title">Institutional Partnerships Director</span>
+                                        </li>
+                                        <li>Jessica Silverman
+                                            <br><span class="title">Sr. Development Manager</span>
+                                        </li>
+                                        <li>Chi Offomah
+                                            <br><span class="title">Development Assistant</span></li>
+                                        <li><span class="open">Grants Administrator</span></li>
+                                        <li><span class="open">Mgr, Corporate Partnerships & Donations</span></li>
+                                </ul>
                                 </li>
                                 <li>
-                                    Nicole Neditch<br><span class="title">Sr. Director of Community Engagement</span>
+                                    Nicole Neditch
+                                    <br><span class="title">Sr. Director of Community Engagement</span>
                                     <ul>
-                                        <li>Debs Schrimmer<br><span class="title">Research &amp; Editorial Coordinator</span></li>
-                                        <li>Becca Blazak<br><span class="title">Fellowship Program Manager</span></li>
-                                        <li>Caitlin Docker<br><span class="title">Content &amp; Community Manager</span></li>
-                                        <li>Hannah Young<br><span class="title">Brigade Manager</span>
-                                        <li>Monique Baena-Tan<br><span class="title">Brigade Coordinator</span></li>
-                                        <li><span class="open">Event Producer</span></li>
-                                        <li><span class="open">Talent Lead</span></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Open <br><span class="title">Head of Technology</span>
-                                    <ul>
-                                        <li>Andrew Hyder<br><span class="title">Developer Relations Engineer</span></li>
-                                        <li>Tomas Apodaca*<br><span class="title">Engineer</span></li>
-                                        <li>Dave Guarino*<br><span class="title">Health Engineer</span></li>
-                                        <li>Mikela Clemmons*<br><span class="title">Sr. Engineer</span></li>
-                                    </ul>
-                                </li>
-                                <li>Open<br><span class="title">Head of Product</span>
-                                    <ul>
-                                        <li>Colleen Cotter<br><span class="title">User Experience Lead, Product</span></li>
-                                        <li>Norris Hung<br><span class="title">Front End Developer</span></li>
+                                        <li>Debs Schrimmer
+                                            <br><span class="title">Research &amp; Editorial Coordinator</span></li>
+                                        <li>Becca Blazak
+                                            <br><span class="title">Fellowship Program Manager</span></li>
+                                        <li>Caitlin Docker
+                                            <br><span class="title">Content &amp; Community Manager</span></li>
+                                        <li>Hannah Young
+                                            <br><span class="title">Brigade Manager</span>
+                                            <li>Monique Baena-Tan
+                                                <br><span class="title">Brigade Coordinator</span></li>
+                                            <li><span class="open">Event Producer</span></li>
+                                            <li><span class="open">Talent Lead</span></li>
                                     </ul>
                                     </li>
-                                <li>ST Mayer<br><span class="title">Chief Outcomes Officer (Interim)</span>
-                                    <ul>
-
-                                        <li>Efrem Bycer<br><span class="title">Economic Development Director</span></li>
+                                    <li>
+                                        Open
+                                        <br><span class="title">Head of Technology</span>
+                                        <ul>
+                                            <li>Andrew Hyder
+                                                <br><span class="title">Developer Relations Engineer</span></li>
+                                            <li>Tomas Apodaca*
+                                                <br><span class="title">Engineer</span></li>
+                                            <li>Dave Guarino*
+                                                <br><span class="title">Health Engineer</span></li>
+                                            <li>Mikela Clemmons*
+                                                <br><span class="title">Sr. Engineer</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>Open
+                                        <br><span class="title">Head of Product</span>
+                                        <ul>
+                                            <li>Colleen Cotter
+                                                <br><span class="title">User Experience Lead, Product</span></li>
+                                            <li>Norris Hung
+                                                <br><span class="title">Front End Developer</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>ST Mayer
+                                        <br><span class="title">Chief Outcomes Officer (Interim)</span>
+                                        <ul>
+                                            <li>Efrem Bycer
+                                                <br><span class="title">Economic Development Director</span></li>
                                             <ul>
-                                                <li>Mikela Clemmons<br><span class="title">Sr. Engineer</span></li>                                          
-                                           </ul>
-                                        <li>Jenny Montoya Tansey<br><span class="title">Safety & Justice Director</span>
-                                            <ul>
-                                                <li>Tomas Apodaca<br><span class="title">Engineer</span></li>
-                                                <li>Jazmyn Latimer<br><span class="title">Designer</span></li>
-                                                <li><span class="open">Product Manager</span></li>
-                                           </ul>
-                                            <li>ST Mayer*<br><span class="title">Health &amp; Human Services Director</span>
-                                            <ul>
-                                                <li>Jake Solomon<br><span class="title">Product Manager</span></li>
-                                                <li>Alan Williams<br><span class="title">Designer</span></li>
-                                                <li>Dave Guarino<br><span class="title">Engineer</span></li>                                                
+                                                <li>Mikela Clemmons
+                                                    <br><span class="title">Sr. Engineer</span></li>
                                             </ul>
+                                            <li>Jenny Montoya Tansey
+                                                <br><span class="title">Safety & Justice Director</span>
+                                                <ul>
+                                                    <li>Tomas Apodaca
+                                                        <br><span class="title">Engineer</span></li>
+                                                    <li>Jazmyn Latimer
+                                                        <br><span class="title">Designer</span></li>
+                                                    <li><span class="open">Product Manager</span></li>
+                                                </ul>
+                                                <li>ST Mayer*
+                                                    <br><span class="title">Health &amp; Human Services Director</span>
+                                                    <ul>
+                                                        <li>Jake Solomon
+                                                            <br><span class="title">Product Manager</span></li>
+                                                        <li>Alan Williams
+                                                            <br><span class="title">Designer</span></li>
+                                                        <li>Dave Guarino
+                                                            <br><span class="title">Engineer</span></li>
+                                                    </ul>
+                                                </li>
+                                        </ul>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li>Alicia Rouault<br><span class="title">Sr. Advisor</span>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                                        <li>Alicia Rouault
+                                            <br><span class="title">Sr. Advisor</span>
+                                        </li>
+                        </ul>
+    </div>
+    <div id="content">
+        <div id="main">
         </div>
-        <div id="content">
-            <div id="main">
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 
 </html>
